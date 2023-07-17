@@ -1,0 +1,9 @@
+body {
+    width: 100vh;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background: url('images/home-page.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
