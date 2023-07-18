@@ -9,19 +9,121 @@
 </head>
 
 <body>
-    <div class="home-container">
+    <header>
         <nav>
             <ul>
                 <li><a href="home.html">Home</a></li>
                 <li><a href="equipment.html">Equipment</a></li>
                 <li><a href="furniture.html">Furniture</a></li>
-                <li><a href="review.html" class="active">Reviews</a></li>
                 <li><a href="offers.html">Offers</a></li>
-                <li><a href="packages.html">Packages</a></li>
+                <li><a href="review.html" class="active">Reviews</a></li>
+                <li><a href="basket.html">Basket</a></li>
             </ul>
         </nav>
         <img class="login" src="images/login.png" width="40px" height="40px" />
+    </header>
+    <!-- modalDialog -->
+    <a href="#openModal"> <img class="login" src="images/login.png" width="40px" height="40px" />
+    </a>
+    <div id="openModal" class="modalDialog">
+        <div> <a href="#close" title="Close" class="close">X</a>
+
+            <form action="#" method="post">
+                <h3 class="text-center">Login Form</h3>
+                <hr><br>
+                <div class="form-group">
+                    <label for="username">Email:</label>
+                    <input type="text" id="email" name="email" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" placeholder="Password" required>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Login</button>
+                </div>
+                <p class='text-center'>Not yet a member? <span class="color-create">Create An Account! </span></p>
+            </form>
+
+        </div>
     </div>
+    <main class="bg">
+        <div class="review-container">
+            <h1 class="text-center">Testimonials</h1>
+        <div class="common-flex">
+            <div class="users">
+                <div class="review-margin-right">
+                    <img class="rev-img-border" src="images/user.png" width="50px" height="50px" alt="user">
+                </div>
+                <div>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum facilis veritatis quo quis suscipit rem quos ea architecto eos ducimus excepturi dolorum sapiente, error at ipsum accusamus assumenda hic accusantium.
+                    </p>
+                    <p class="name">Aung Aung</p>
+                </div>
+            </div>
+            <div class="users">
+                <div class="review-margin-right">
+                    <img class="rev-img-border" src="images/user.png" width="50px" height="50px" alt="user">
+                </div>
+                <div>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum facilis veritatis quo quis suscipit rem quos ea architecto eos ducimus excepturi dolorum sapiente, error at ipsum accusamus assumenda hic accusantium.
+                    </p>
+                    <p class="name">Mg Mg</p>
+                </div>
+            </div>
+        </div>
+        <div class="common-flex">
+            <div class="users">
+                <div class="review-margin-right">
+                    <img class="rev-img-border" src="images/user.png" width="50px" height="50px" alt="user">
+                </div>
+                <div>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum facilis veritatis quo quis suscipit rem quos ea architecto eos ducimus excepturi dolorum sapiente, error at ipsum accusamus assumenda hic accusantium.
+                    </p>
+                    <p class="name">Kyaw Aung</p>
+                </div>
+            </div>
+            <div class="users">
+                <div class="review-margin-right">
+                    <img class="rev-img-border" src="images/user.png" width="50px" height="50px" alt="user">
+                </div>
+                <div>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum facilis veritatis quo quis suscipit rem quos ea architecto eos ducimus excepturi dolorum sapiente, error at ipsum accusamus assumenda hic accusantium.
+                    </p>
+                    <p class="name">Su Myat</p>
+                </div>
+            </div>
+        </div>
+        <div class="common-flex">
+            <div class="users">
+                <div class="review-margin-right">
+                    <img class="rev-img-border" src="images/user.png" width="50px" height="50px" alt="user">
+                </div>
+                <div>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum facilis veritatis quo quis suscipit rem quos ea architecto eos ducimus excepturi dolorum sapiente, error at ipsum accusamus assumenda hic accusantium.
+                    </p>
+                    <p class="name">Aung Kyaw Kyaw</p>
+                </div>
+            </div>
+            <div class="users">
+                <div class="review-margin-right">
+                    <img class="rev-img-border" src="images/user.png" width="50px" height="50px" alt="user">
+                </div>
+                <div>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum facilis veritatis quo quis suscipit rem quos ea architecto eos ducimus excepturi dolorum sapiente, error at ipsum accusamus assumenda hic accusantium.
+                    </p>
+                    <p class="name">Aung La N Sang</p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </main>
     <footer>
         <div class="footer">
             <div class="footer-container">

@@ -15,44 +15,44 @@
                 <li><a href="home.html" class="active">Home</a></li>
                 <li><a href="equipment.html">Equipment</a></li>
                 <li><a href="furniture.html">Furniture</a></li>
-                <li><a href="review.html">Reviews</a></li>
                 <li><a href="offers.html">Offers</a></li>
-                <li><a href="packages.html">Packages</a></li>
+                <li><a href="review.html">Reviews</a></li>
+                <li><a href="basket.html">Basket</a></li>
             </ul>
         </nav>
     </header>
+    <!-- modalDialog -->
+    <a href="#openModal"> <img class="login" src="images/login.png" width="40px" height="40px" />
+    </a>
+    <div id="openModal" class="modalDialog">
+        <div> <a href="#close" title="Close" class="close">X</a>
 
-    <main>
-        <!-- modalDialog -->
-        <a href="#openModal"> <img class="login" src="images/login.png" width="40px" height="40px" />
-        </a>
-        <div id="openModal" class="modalDialog">
-            <div> <a href="#close" title="Close" class="close">X</a>
+            <form action="#" method="post">
+                <h3 class="text-center">Login Form</h3>
+                <hr><br>
+                <div class="form-group">
+                    <label for="username">Email:</label>
+                    <input type="text" id="email" name="email" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" placeholder="Password" required>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Login</button>
+                </div>
+                <p class='text-center'>Not yet a member? <span class="color-create">Create An Account! </span></p>
+            </form>
 
-                <form action="#" method="post">
-                    <h3 class="text-center">Login Form</h3>
-                    <hr><br>
-                    <div class="form-group">
-                        <label for="username">Email:</label>
-                        <input type="text" id="email" name="email" placeholder="Email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="password">Password:</label>
-                        <input type="password" id="password" name="password" placeholder="Password" required>
-                    </div>
-                    <div class="form-group">
-                        <button type="submit">Login</button>
-                    </div>
-                    <p class='text-center'>Not yet a member? <span class="color-create">Create An Account! </span></p>
-                </form>
-
-            </div>
         </div>
-        <!-- <div class="inner-container-home">
-            <div class="contet">
+    </div>
+
+    <main class="bg">
+        <div class="inner-container-home">
+            <div>
                 <div class="text-center">
                     <h1>Welcome to Our Store!</h1>
-                    <p>Explore our wide selection of high-quality furniture and camping gear.</p>
+                    <h3 class="animated-text text-center">Explore our wide selection of high-quality furniture and camping gear.</h3>
                 </div>
                 <div class="card-style-container">
                     <div class="card">
@@ -76,6 +76,11 @@
                             <h2>Offers</h2>
                             <p>Explore our wide selection of high-quality furniture.</p>
                         </div>
+                        <div class="mySlides fade">
+                            <img src="images/home-slide5.jpg" alt="Card Image">
+                            <h2>Offers</h2>
+                            <p>Explore our wide selection of high-quality furniture.</p>
+                        </div>
                         <a class="prev" onclick="plusSlides(-1)">❮</a>
                         <a class="next" onclick="plusSlides(1)">❯</a>
                         <div style="text-align:center">
@@ -83,19 +88,12 @@
                             <span class="dot" onclick="currentSlide(2)"></span>
                             <span class="dot" onclick="currentSlide(3)"></span>
                             <span class="dot" onclick="currentSlide(4)"></span>
+                            <span class="dot" onclick="currentSlide(5)"></span>
                         </div>
                     </div>
                 </div>
             </div>
-        </div> -->
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt animi magni ea illum, nam deleniti molestiae explicabo perspiciatis atque ut debitis quisquam neque, vero quasi amet dolore incidunt velit laudantium!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt animi magni ea illum, nam deleniti molestiae explicabo perspiciatis atque ut debitis quisquam neque, vero quasi amet dolore incidunt velit laudantium!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt animi magni ea illum, nam deleniti molestiae explicabo perspiciatis atque ut debitis quisquam neque, vero quasi amet dolore incidunt velit laudantium!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt animi magni ea illum, nam deleniti molestiae explicabo perspiciatis atque ut debitis quisquam neque, vero quasi amet dolore incidunt velit laudantium!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt animi magni ea illum, nam deleniti molestiae explicabo perspiciatis atque ut debitis quisquam neque, vero quasi amet dolore incidunt velit laudantium!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt animi magni ea illum, nam deleniti molestiae explicabo perspiciatis atque ut debitis quisquam neque, vero quasi amet dolore incidunt velit laudantium!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt animi magni ea illum, nam deleniti molestiae explicabo perspiciatis atque ut debitis quisquam neque, vero quasi amet dolore incidunt velit laudantium!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt animi magni ea illum, nam deleniti molestiae explicabo perspiciatis atque ut debitis quisquam neque, vero quasi amet dolore incidunt velit laudantium!
+        </div>
     </main>
 
     <footer>
@@ -135,6 +133,9 @@
         let slideIndex = 1;
         showSlides(slideIndex);
 
+        setInterval(() => {
+            showSlides(++slideIndex);
+        },3000)
         function plusSlides(n) {
             showSlides(slideIndex += n);
         }

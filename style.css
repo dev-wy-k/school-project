@@ -2,12 +2,17 @@ body,
 html {
     height: 100%;
     margin: 0;
+    padding: 0;
 }
 main{
-    height: 100%;
-    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    height: auto !important;
 }
-body {
+.bg {
+    padding: 0;
+    margin: 0;
     position:relative;
     /* The image used */
     background-image: url("images/home-page.jpg");
@@ -54,10 +59,6 @@ nav a:hover {
 nav a.active {
     background: darkolivegreen;
     color: ghostwhite;
-}
-
-.home-container {
-    position: relative;
 }
 
 .login {
@@ -184,7 +185,7 @@ span {
 }
 
 .card {
-    max-width: 400px;
+    max-width: 521px;
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -353,6 +354,165 @@ span {
     justify-content: space-around;
     align-items: center;
 }
+
+
+/*** review page ***/
+h1{
+    color: darkblue;
+}
+.review-container{
+    max-width: 900px;
+    margin: auto;
+}
+.common-flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.users{
+    max-width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(168, 174, 174);
+    padding: 10px;
+    margin: 10px;
+}
+
+.users:hover{
+    background-color: gainsboro;
+}
+.name{
+    font-weight: bold;
+    color: darkblue;
+}
+
+.review-margin-right{
+    margin-right: 20px;
+}
+.rev-img-border{
+    border: 3px solid gold;
+    border-radius: 50%;
+}
+
+
+/*** equipment ***/
+.catalog {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.item {
+    max-width: 300px;
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+}
+
+.item img {
+    width: 100%;
+    border-radius: 5px;
+}
+.italic{
+    font-style: italic;
+}
+.item:hover{
+    background-color: #d1c8c8;
+}
+
+h2 {
+    margin-top: 10px;
+}
+
+.price {
+    font-weight: bold;
+    margin-right: 133px;
+}
+
+button {
+    text-align: end;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/*** basket*/
+.overflow{
+    background-color: #d1c8c8;
+    overflow: auto;
+}
+table{
+    min-width: 920px;
+    width: 100%;
+}
+table thead th{
+    background-color: #779dc6;
+}
+table th,td{
+    padding: 10px;
+    text-align: center;
+}
+.selected-item{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.item-margin-right{
+    margin-right: 10px;
+}
+.quantity {
+    display: flex;
+    align-items: center;
+  }
+  
+  .btn {
+    padding: 0.5rem 1rem;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 0 0.2rem;
+  }
+  
+  input[type="number"] {
+    width: 40px;
+    text-align: center;
+  }
+
+/* CSS */
+@keyframes colorChange {
+    0% {
+      color: rgb(201, 176, 176);
+    }
+    50% {
+      color: rgb(80, 80, 213);
+    }
+    100% {
+      color: rgb(49, 172, 49);
+    }
+  }
+  
+  /* Apply the animation to the text element */
+  .animated-text {
+    animation: colorChange 4s infinite;
+  }
 
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
